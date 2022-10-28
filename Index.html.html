@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text">MY CALCULATOR</h1>   
+    <div class="calculator">
+    <input  type="text" name="screen" id="screen">
+      <div class="break"></div>
+  <table>
+  <tr>
+    <td> <button class="button-30"> ( </button> </td>
+  <td> <button class="button-30"> ) </button> </td>
+    <td> <button class="button-30"> C </button> </td>
+    <td> <button class="button-30"> % </button> </td>
+    
+    </tr>
+    
+    <tr>
+    <td> <button class="button-30"> 1 </button> </td>
+  <td> <button class="button-30"> 2 </button> </td>
+    <td> <button class="button-30"> 3 </button> </td>
+    <td> <button class="button-30"> x </button> </td>
+    
+      <tr>
+    <td> <button class="button-30"> 4 </button> </td>
+  <td> <button class="button-30"> 5 </button> </td>
+    <td> <button class="button-30"> 6 </button> </td>
+    <td> <button class="button-30"> - </button> </td>
+    
+    </tr>
+    
+    <tr>
+    <td> <button class="button-30"> 7 </button> </td>
+  <td> <button  class="button-30"> 8 </button> </td>
+    <td> <button class="button-30"> 9 </button> </td>
+    <td> <button class="button-30"> + </button> </td>
+    
+    </tr>
+    
+    <tr>
+    <td> <button class="button-30"> 0 </button> </td>
+  <td> <button class="button-30">  . </button> </td>
+    <td> <button class="button-30"> / </button> </td>
+    <td> <button class="button-30"> = </button> </td>
+    
+    </tr>
+    
+    
+    </tr>
+      </table>     
+    </div>
+  </div>
+  <script>
+    
+let screen = document.getElementById("screen");
+buttons = document.querySelectorAll("button");
+let screenValue = "";
+for (item of buttons) {
+item.addEventListener("click", (e) => {
+buttonText = e.target.innerText;
+console.log("Button text is ", buttonText);
+if (buttonText == "X") {
+  buttonText = "*";
+  screenValue += buttonText;
+  screen.value = screenValue;
+} else if (buttonText == "C") {
+  screenValue = "";
+  screen.value = screenValue;
+} else if (buttonText == "=") {
+  screen.value = eval(screenValue);
+} else {
+  screenValue += buttonText;
+  screen.value = screenValue;
+}
+});
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.container {
+    text-align: center; 
+    margin-top: 23px; 
+   }
+   
+   .text {
+     font-size: 30px;
+     font-family: Papyrus;
+   }
+   
+   table {
+      margin: auto;  
+   }
+   
+   .break{
+      text-indent: 50px;
+   }
+   
+   input {
+       box-shadow: inset 0 0 15px black;
+       border-radius:15px;
+       border:5px solid #2e2e2e;
+       font-size: 34px;
+       height:65px;
+       width: 230px;
+       background-color: #8c8c8a;
+       margin-top: 10px;
+       margin-bottom: 20px;
+   }
+   
+   button {
+     border-radius:px; 
+     font-size:40px;
+     background:#B0C4DE;
+     width:102px;
+     height:90px;
+     margin:6px;
+   }
+   
+   .button-30 {
+     align-items: center;
+     appearance: none;
+     background-color: #FCFCFD;
+     border-radius: 10px;
+     border-width: 0;
+     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+     display: inline-flex;
+     font-family: "JetBrains Mono",monospace;
+     height: 50px;
+     width: 50px;
+     justify-content: center;
+     line-height: 1;
+     list-style: none;
+     position: relative;
+     transition: box-shadow .15s,transform .15s;
+     font-size: 35px;
+   }
+   
+   .button-30:focus {
+     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+   }
+   
+   .button-30:hover {
+     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+     transform: translateY(-2px);
+   }
+   
+   .button-30:active {
+     box-shadow: #D6D6E7 0 3px 7px inset;
+     transform: translateY(2px);
+   }
+   
+   .calculator {
+     background-color: #00213C;  
+     padding:23px; 
+     border-radius: 53px;
+     display: inline-block;
+   }
+   
+   h1 {
+     font-size:50px;
+     font-family: "Extra Light", Courier, Sans Serif; 
+   } 
